@@ -24,6 +24,7 @@ VALIDATE reconciliation checks (job fails if counts do not match)
 ```
 
 <!-- Replace this block with a diagram image, for example docs/architecture.png -->
+![Architecture](docs/architecture_final.png)
 
 ## Design decisions
 
