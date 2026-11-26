@@ -53,6 +53,8 @@ VALIDATE reconciliation checks (job fails if counts do not match)
 
 ## Workflow job
 
+![Job run graph](docs/jobs_run_graph.png)
+
 `bank_daily_batch` has five tasks:
 
 1. `01_bronze_reference`
@@ -93,7 +95,7 @@ bank-batch-lakehouse/
     05_validate.py
   docs/
     architecture.png
-    job_run_graph.png
+    jobs_run_graph.png
 ```
 
 ## How to run
