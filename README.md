@@ -3,7 +3,7 @@
 An incremental batch pipeline that ingests daily bank transaction files from AWS S3, cleans and validates them, and produces reporting tables for branch managers and a fraud team. Built on Databricks with the medallion architecture and orchestrated by a Workflows job.
 
 ## Architecture
-
+Dataflow Text
 ```
 S3 landing folder (external volume)
    |-- customers.csv      (full file each run)
@@ -54,7 +54,7 @@ VALIDATE reconciliation checks (job fails if counts do not match)
 
 ## Workflow job
 
-![Job run graph](docs/jobs_run_graph.png)
+![jobs run graph](docs/jobs_run_graph.png)
 
 `bank_daily_batch` has five tasks:
 
@@ -95,7 +95,7 @@ bank-batch-lakehouse/
     04_gold.py
     05_validate.py
   docs/
-    architecture.png
+    architecture_final.png
     jobs_run_graph.png
 ```
 
